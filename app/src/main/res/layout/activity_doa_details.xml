@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoaDetails"
+    android:id="@+id/activity_doa_details"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:src="@drawable/back"
+                android:id="@+id/back_image"
+                android:paddingBottom="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  اسم المريض"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اسم المريض"
+                android:id="@+id/patient_name"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  اسم الدواء"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اسم الدواء"
+                android:id="@+id/drug_name"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dose  "
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الجرعة"
+                android:id="@+id/drug_dose"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="17dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Route  "
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:id="@+id/textView12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الوصف"
+                android:id="@+id/drug_route"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="17dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ملاحظات دوائية"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الوصف"
+                android:id="@+id/drug_notes"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="17dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اجراءات تمريضية"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold|italic"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الاجراءات"
+                android:id="@+id/drug_peoc"
+                android:layout_marginRight="135dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="45dp"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/modify"
+                android:text="تعديل الدواء"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteDrug_btn"
+                android:text="حذف الدواء"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteUser_btn"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="0dp"
+                android:text="حذف المريض"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update"
+    android:id="@+id/activity_Update"
+    android:background="#22D5B2">
+
+
+    <TextView
+        android:text="Dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/upadate_textView6"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/upadate_textView"
+        android:layout_alignRight="@+id/upadate_textView"
+        android:layout_alignEnd="@+id/upadate_textView" />
+
+    <TextView
+        android:text="Route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/upadate_textView7"
+        android:layout_below="@+id/upadate_textView6"
+        android:layout_alignRight="@+id/upadate_textView6"
+        android:layout_alignEnd="@+id/upadate_textView6"
+
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:text="ملاحظات دوائية"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upadate_textView7"
+        android:layout_alignRight="@+id/upadate_textView7"
+        android:layout_alignEnd="@+id/upadate_textView7"
+        android:layout_marginTop="30dp"
+        android:id="@+id/upadate_textView8"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/upadate_doaroute"
+        android:hint="ادخل الطريقة"
+        android:layout_alignBaseline="@+id/upadate_textView7"
+        android:layout_alignBottom="@+id/upadate_textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/upadate_doaname"
+        android:hint="ادخل اسم الدواء"
+        android:layout_alignBaseline="@+id/upadate_textView"
+        android:layout_alignBottom="@+id/upadate_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/upadate_doadose"
+        android:hint="ادخل الجرعة"
+        android:layout_alignBaseline="@+id/upadate_textView6"
+        android:layout_alignBottom="@+id/upadate_textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="عدد الجرعات"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upadate_textView9"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+
+        android:layout_alignBaseline="@+id/upadate_doanum"
+        android:layout_alignBottom="@+id/upadate_doanum"
+        android:layout_alignRight="@+id/upadate_textView8"
+        android:layout_alignEnd="@+id/upadate_textView8" />
+
+    <TextView
+        android:text="الميعاد"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upadate_doanum"
+        android:layout_alignRight="@+id/upadate_textView9"
+        android:layout_alignEnd="@+id/upadate_textView9"
+        android:layout_marginTop="25dp"
+        android:id="@+id/upadate_textView2"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/upadate_doatime"
+        android:layout_alignBaseline="@+id/upadate_textView2"
+        android:layout_alignBottom="@+id/upadate_textView2"
+        android:layout_alignLeft="@+id/upadate_doanum"
+        android:layout_alignStart="@+id/upadate_doanum"
+        android:hint="ادخل اول ميعاد في اليوم"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/upadate_doanum"
+        android:hint="ادخل عدد الجرعات في اليوم"
+        android:maxLines="2"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/upadate_doanotes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number" />
+
+    <Button
+        android:text="تسجيل"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upadate_savedoa"
+        android:background="@drawable/round"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/upadate_doatime"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/upadate_doanotes"
+        android:hint="ادخل الملاحظات"
+        android:maxLines="2"
+        android:layout_alignBaseline="@+id/upadate_textView8"
+        android:layout_alignBottom="@+id/upadate_textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="اسم الدواء"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:id="@+id/upadate_textView"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

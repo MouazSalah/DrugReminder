@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Drug Reminder</string>
+    <string name="title_activity_users">Users</string>
+</resources>

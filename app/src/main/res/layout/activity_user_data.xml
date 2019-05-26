@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserData"
+    android:id="@+id/activity_user_data"
+    android:background="#22D5B2">
+
+    <TextView
+        android:text="اسم المريض"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="53dp"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:text="السن"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView6"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="الدكتور"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:text="التشخيص"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView8"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/dio"
+        android:hint="ادخل التشخيص"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLines="2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine|textImeMultiLine"
+        android:ems="10"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignRight="@+id/savedoa"
+        android:layout_alignEnd="@+id/savedoa"
+        android:id="@+id/doanum"
+        android:hint="ادخل الاجراءات"
+        android:maxLines="2"/>
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/dr"
+        android:hint="ادخل اسم الدكتور"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/username"
+        android:hint="ادخل اسم المريض"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/age"
+        android:hint="ادخل سن المريض"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:text="تسجيل"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:background="@drawable/round"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp" />
+
+    <TextView
+        android:text="الاجراءات"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dio"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView9"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:textSize="16sp"
+        android:textColor="@android:color/background_light"
+
+        />
+
+</RelativeLayout>
